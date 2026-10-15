@@ -1,0 +1,35 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.eggs/
+build/
+dist/
+site/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.hypothesis/
+.coverage
+coverage.xml
+htmlcov/
+
+# Virtualenvs
+.venv/
+venv/
+env/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+
+# Curation outputs (don't commit generated shards/manifests)
+out/
+*.npz
+*.h5
+*.parquet
+!src/kuration/sample_data/sessions/*.parquet
+
+CLAUDE.md
+uv.lock

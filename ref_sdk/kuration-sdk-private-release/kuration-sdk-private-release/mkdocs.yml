@@ -1,0 +1,100 @@
+site_name: Kuration
+site_description: Build reproducible training datasets from sequential data.
+site_url: https://aintropy-solutions.github.io/kuration-sdk/
+repo_url: https://github.com/aintropy-solutions/kuration-sdk
+repo_name: aintropy-solutions/kuration-sdk
+edit_uri: edit/main/docs/
+docs_dir: docs
+
+theme:
+  name: material
+  language: en
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: deep orange
+      accent: orange
+      toggle:
+        icon: material/weather-night
+        name: Use dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: deep orange
+      accent: orange
+      toggle:
+        icon: material/weather-sunny
+        name: Use light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - navigation.footer
+    - navigation.tracking
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+plugins:
+  - search
+
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences
+  - pymdownx.snippets:
+      base_path: ["."]
+      check_paths: true
+
+extra_css:
+  - assets/stylesheets/extra.css
+
+nav:
+  - Home: index.md
+  - Start:
+      - Core concepts: overview.md
+      - Quickstart: quickstart.md
+      - Pipeline: pipeline.md
+      - Cookbook: usage.md
+  - Build datasets:
+      - Schemas: schema.md
+      - Adapters and inputs: adapters.md
+      - Metrics DSL: dsl.md
+      - Selection strategies: strategies.md
+      - Outputs and integrity: output.md
+  - Extend:
+      - Operators: operators.md
+      - Operator inventory: operator-inventory.md
+      - Customization and discovery: customization.md
+      - Selection recipes: selection.md
+      - Pixel shift: pixel-shift.md
+      - Action-state consistency: action-state-consistency.md
+      - Collision detection: collision.md
+      - SLAM trajectory curation: slam.md
+      - Domain modules: domains.md
+      - Architecture: architecture.md
+  - Operate:
+      - Jobs and CLI: jobs.md
+      - Compatibility: compatibility.md
+      - Release notes: releases.md
+      - Community and support: community.md
+      - Releasing: releasing.md
+  - Reference:
+      - Python API: api.md
+      - Documentation contract: documentation-contract.md
+  - Project:
+      - Changelog: changelog.md
+      - Roadmap: roadmap.md
+      - Contributing: contributing.md
+      - Governance: governance.md
+      - Security policy: security.md
+      - Support: support.md
+
+copyright: Kuration SDK documentation

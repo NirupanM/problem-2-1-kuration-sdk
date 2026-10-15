@@ -5,3 +5,6 @@ venv/
 .env
 node_modules/
 .DS_Store
+.venv/
+out/
+__pycache__/
